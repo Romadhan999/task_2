@@ -30,19 +30,19 @@ class Player
   end
 
   def menu_content
-    puts "||Description:                           ||"
-    puts '|| 1. type "new" to create a character   ||'
-    puts '|| 2. type "start" to begin the fight    ||'
-    puts '|| 3. exit                               ||'
-    puts "||-----------------------------------------"
+    puts "||Description:                             ||"
+    puts '|| 1. type "new" to create a character     ||'
+    puts '|| 2. type "start" to begin the fight      ||'
+    puts '|| 3. exit                                 ||'
+    puts "||-----------------------------------------||"
   end
 
   def create_player
-    puts "Current Player: #{player.count}"
+    puts "  Current Player: #{player.count}"
       player.each do | index, value |
-        puts "- #{index}"
+        puts "  - #{index}"
       end
-    puts "*Max player 2 or 3"
-    puts "-----------------------------------------"
+    puts "  *Max player 2 or 3"
+    puts "||-----------------------------------------||"
   end
 end
